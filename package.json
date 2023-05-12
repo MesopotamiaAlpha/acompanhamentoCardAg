@@ -1,0 +1,22 @@
+{
+  "name": "acompanhamentocardag",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido para acompanhar card de perfil da empresa no google, caso tenha alguma alteração irá disparar um alerta.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "José Antonio",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/webpack-preprocessor": "^5.17.1",
+    "css-loader": "^6.7.3",
+    "cypress": "^12.12.0",
+    "cypress-repeat": "^2.3.3",
+    "ts-loader": "^9.4.2"
+  },
+  "dependencies": {
+    "listr": "^0.14.3",
+    "ora": "^6.3.0"
+  }
+}
