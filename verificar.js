@@ -10,7 +10,7 @@ const tasks = new Listr([
         exec('npx cypress run teste', (error, stdout, stderr) => {
           if (stdout.includes('✔')) {
             ctx.resultado = 'Perfil está correto como esperado';
-            task.output = 'Resultado anterior: \x1b[32mTexto encontrado\x1b[0m';
+            task.output = 'Resultado anterior: \x1b[32mPagina continua como esperado\x1b[0m';
             fs.writeFileSync('resultado.txt', ctx.resultado);
             resolve();
           } else {
