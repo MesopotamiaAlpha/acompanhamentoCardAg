@@ -4,18 +4,18 @@ const Listr = require('listr');
 
 const tasks = new Listr([
   {
-    title: 'Executando teste',
+    title: 'Verfificando se perfil passou por atualização',
     task: (ctx, task) => {
       return new Promise((resolve, reject) => {
         exec('npx cypress run teste', (error, stdout, stderr) => {
           if (stdout.includes('✔')) {
-            ctx.resultado = 'Texto encontrado';
+            ctx.resultado = 'Perfil está correto como esperado';
             task.output = 'Resultado anterior: \x1b[32mTexto encontrado\x1b[0m';
             fs.writeFileSync('resultado.txt', ctx.resultado);
             resolve();
           } else {
-            ctx.resultado = 'Não foi localizado o texto';
-            task.output = 'Resultado anterior: \x1b[31mNão foi localizado o texto\x1b[0m';
+            ctx.resultado = 'Perfil passou por mudanças, disparando alertas';
+            task.output = 'Resultado anterior: \x1b[31mUm dos campos foi identificado alterado\x1b[0m';
             fs.writeFileSync('resultado.txt', ctx.resultado);
             reject();
           }
