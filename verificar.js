@@ -31,7 +31,7 @@ function run(client) {
   tasks.run().then(() => {
     setTimeout(() => {
       run(client);
-    }, 10000); // Repete o teste após 10 segundos
+    }, 1800000); // Repete o teste após 30 minutos
   }).catch(() => {
     const message = 'Perfil alterado, acione o responsável';
     const numbers = ['5512981006992', '5512981006992', '5512981006992', '5512981006992'];

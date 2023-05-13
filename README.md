@@ -1,3 +1,11 @@
+# Acompanhador do card Google
+
+Projeto sendo desenvolvido para acompanhar uma pagina no google.
+
+
+
+!!!execute npx cypress run teste pela primeira vez!!
+
 ### instalar o pacote cypress
 ```
 npm install cypress --save-dev
