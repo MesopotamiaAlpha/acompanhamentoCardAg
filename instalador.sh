@@ -39,4 +39,18 @@ else
   fi
 fi
 
+# Instala o pacote `qrcode-terminal`
+if npm list -g qrcode-terminal | grep "qrcode-terminal@" > /dev/null; then
+  echo -e "\e[32mPacote qrcode-terminal já instalado\e[0m"
+else
+  echo -e "\e[33mInstalando pacote qrcode-terminal...\e[0m"
+  npm install -g qrcode-terminal > /dev/null 2>&1
+  if [[ $? -eq 0 ]]; then
+    echo -e "\e[32mPacote qrcode-terminal instalado com sucesso\e[0m"
+  else
+    echo -e "\e[31mErro ao instalar o pacote qrcode-terminal\e[0m"
+    exit 1
+  fi
+fi
+
 echo "Instalação dos pacotes finalizada"
