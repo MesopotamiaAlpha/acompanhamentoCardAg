@@ -3,7 +3,7 @@ describe('Acompanhamento Card Google EmbarqueBem', () => {
     cy.visit('https://www.google.com.br') // Acessa o site do Google
 
     cy.get('#APjFqb') // Seleciona o campo de busca
-      .type('princesa dos campos pato branco') // Escreve o termo a ser buscado
+      .type('agencia princesa dos campos pato branco') // Escreve o termo a ser buscado
       .type('{enter}') // Pressiona a tecla Enter para realizar a busca
 
       cy.get('.LrzXr > a > span')
