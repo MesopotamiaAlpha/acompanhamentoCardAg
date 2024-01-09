@@ -34,7 +34,8 @@ function run(client) {
     }, 1800000); // Repete o teste após 30 minutos
   }).catch(() => {
     const message = 'Perfil alterado, acione o responsável';
-    const numbers = ['5512981006992', '5512981006992', '5512981006992', '5512981006992'];
+    // na variavel numbers seria os numero que devem ser acionados, o numero segue o padrão 55 que seria o código do brasil,DD que seria o código de area sendo 11 SP 12 SJC e etc.. e o numero em questão que deve ser acionado exemplo '55DDXXXXXXXXXX'
+    const numbers = ['55DDXXXXXXXXXX', '55DDXXXXXXXXXX', '55DDXXXXXXXXXX', '55DDXXXXXXXXXX'];
     sendMessage(client, numbers);
     setTimeout(() => {
       run(client);

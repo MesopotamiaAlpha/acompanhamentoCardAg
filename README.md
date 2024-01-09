@@ -1,6 +1,9 @@
 # Acompanhador do card Google
 
-Projeto sendo desenvolvido para acompanhar uma pagina no google.
+Este projeto está descontinuado de momento. O projeto não foi finalizado e está com funcionamento parcial.
+O projeto foi desenvolvido para resolver um problema que uma empresa teve, determinada agencia possui um card de divulgação na pagina de pesquisa da google, no momento da pesquisa pela agencia aparece um card a direita com o numero de telefone da empresa. Em um determinado dia houve uma alteração deste numero onde os donos perceberam esta mudança depois de um tempo grande, foi neste momento que resolvi criar algum tipo de monitoramento deste campo de telefone para que caso haja alguma mudança isso fosse sinalizado por whatsapp rapidamente.
+
+Então pensei em usar o cypress para que ele acesse a pagina do google, faça a pesquisa pelo nome da agencia e assim que o resultado aparecer ele conferisse se o campo que quero controlar foi alterado ou não. Caso ele tenha sido alterado ele iria acionar 3 pessoas direto no whatsapp que o campo foi alterado, assim tendo um tempo de reação para correção mais rapido.
 
 
 
