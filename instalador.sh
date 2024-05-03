@@ -2,6 +2,8 @@
 
 echo "Iniciando instalação dos pacotes..."
 
+sudo apt-get install -y nodejs npm
+
 # Verifica se o pacote `listr` está instalado
 if npm list -g listr | grep "listr@" > /dev/null; then
   echo -e "\e[32mPacote listr já instalado\e[0m"
