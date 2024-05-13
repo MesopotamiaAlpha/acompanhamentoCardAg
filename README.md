@@ -5,7 +5,7 @@ O projeto foi desenvolvido para resolver um problema que uma empresa teve, deter
 
 Então pensei em usar o cypress para que ele acesse a pagina do google, faça a pesquisa pelo nome da agencia e assim que o resultado aparecer ele conferisse se o campo que quero controlar foi alterado ou não. Caso ele tenha sido alterado ele iria acionar 3 pessoas direto no whatsapp que o campo foi alterado, assim tendo um tempo de reação para correção mais rapido.
 
-
+Projeto desenvolvido em base Linux.
 
 !!!execute npx cypress run teste pela primeira vez!!
 
