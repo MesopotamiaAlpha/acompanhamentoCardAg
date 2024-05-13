@@ -1,4 +1,4 @@
-describe('Acompanhamento Card Google EmbarqueBem', () => {
+describe('Acompanhamento Card Google', () => {
   //dentro do it foi colocado a descrição do que o teste deve fazer
   it('#####', () => {
     cy.visit('https://www.google.com.br') // Acessa o site do Google
